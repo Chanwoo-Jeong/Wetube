@@ -1,0 +1,56 @@
+@import '../../styles/common.scss';
+
+
+#header.wt-grid-render {
+    width: 100%;
+    display: flex;
+    z-index: 100;
+}
+
+#chips-wrapper.wt-chip-bar {
+    background-color: var(--main-bg);
+    border-top: none;
+    border-bottom: none;
+    position: fixed;
+    // top: var(--wt-grid-chip-bar-top);
+    width: var(--wt-grid-chip-bar-width);
+    display: flex;
+    justify-content: flex-start;
+    flex: none;
+}
+
+#scroll-container.wt-chip-bar {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+wt-chip.wt-chip-bar:first-of-type {
+    margin-left: 24px;
+}
+
+
+
+wt-chip.wt-chip-bar.selected {
+    background-color: var(--text-primary);
+    color: var(--text-primary-inverse);
+
+    &:hover {
+        background-color: var(--text-primary);
+    }
+}
+
+wt-chip.wt-chip-bar {
+    margin: 12px;
+    margin-left: 0;
+    padding: 0 var(--wt-margin-3x);
+
+    &:hover {
+        background-color: var(--white-alpha-20);
+    }
+}
+
+
+#text.wt-chip {
+    max-width: 20rem;
+}

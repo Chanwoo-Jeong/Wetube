@@ -1,0 +1,132 @@
+@import '../../styles/common.scss';
+
+.dialog-content.wt-upload-dialog {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.header.wt-upload-dialog {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-row.wt-upload-dialog {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 16px;
+    border-bottom: 1px solid var(--wt-line-divider);
+    height: calc(var(--header-title-row-height) - 1px);
+}
+
+.metadata-fade-in-section.wt-upload-dialog {
+    opacity: 1;
+    transition: opacity 200ms var(--outgoing-curve);
+}
+
+#title.wt-upload-dialog {
+    font-family: "Roboto", "Noto", sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 675px;
+    margin-right: 16px;
+}
+
+.close-button-area.wt-upload-dialog {
+    display: flex;
+    margin-left: auto;
+}
+
+#wt-upload-dialog-file-picker.wt-upload-dialog {
+    flex: 1;
+    height: auto;
+}
+
+
+
+#content.wt-upload-file-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 370px;
+    padding: 16px 50px 0;
+}
+
+
+
+#circle.wt-upload-file-picker-animation {
+    width: 136px;
+    height: 136px;
+    background: var(--wt-general-background-a);
+    position: relative;
+    border-radius: 68px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label.wt-upload-file-picker {
+    font-family: "Roboto", "Noto", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 23px;
+}
+
+.sublabel.wt-upload-file-picker {
+    font-family: "Roboto", "Noto", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+#select-files-button.wt-upload-file-picker {
+    margin-top: 26px;
+    margin-bottom: auto;
+}
+
+.disclaimer.wt-upload-file-picker {
+    font-family: "Roboto", "Noto", sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.011em;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--text-secondary);
+    text-align: center;
+    line-height: 24px;
+
+    &:last-of-type {
+        margin-bottom: 4px;
+    }
+
+    a {
+        color: var(--text-sub-blue);
+    }
+}
+
+wt-dialog.wt-upload-dialog> {
+    *.wt-upload-dialog {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+wt-upload-dialog[workflow-step=SELECT_FILES] #scrollable-content.wt-upload-dialog,
+wt-upload-dialog[workflow-step=SELECT_FILES] .button-area.wt-upload-dialog {
+    display: none;
+}
