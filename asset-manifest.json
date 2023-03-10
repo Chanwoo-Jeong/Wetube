@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Wetube/static/css/main.0da380ab.css",
-    "main.js": "/Wetube/static/js/main.9d00a73d.js",
+    "main.js": "/Wetube/static/js/main.fd8377a4.js",
     "static/media/test2.mp4": "/Wetube/static/media/test2.81cd99cd92188b2633ab.mp4",
     "static/media/test.mp4": "/Wetube/static/media/test.c103ee47188eadfa00a4.mp4",
     "static/media/test.jpg": "/Wetube/static/media/test.123355a4422fc13b721f.jpg",
     "static/media/test2.jpg": "/Wetube/static/media/test2.a48d1f16d55ea5e122b0.jpg",
     "index.html": "/Wetube/index.html",
     "main.0da380ab.css.map": "/Wetube/static/css/main.0da380ab.css.map",
-    "main.9d00a73d.js.map": "/Wetube/static/js/main.9d00a73d.js.map"
+    "main.fd8377a4.js.map": "/Wetube/static/js/main.fd8377a4.js.map"
   },
   "entrypoints": [
     "static/css/main.0da380ab.css",
-    "static/js/main.9d00a73d.js"
+    "static/js/main.fd8377a4.js"
   ]
 }
