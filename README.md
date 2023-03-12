@@ -59,9 +59,13 @@
   ```
 - modal Potal 을 이용한 Upload 기능 구현
   ```javascript
-     "기존의 리액트에서 컴포넌트를 렌더링 하게 될 때, children 은 부모컴포넌트의 DOM 내부에 렌더링 되어야 했지만 Portals 를 사용하면 DOM 의 계층구조 시스템에 종속되지 않으면서 컴포넌트를 렌더링 할 수 있다."
-    <br/>
-     "modal 사용 시 다른 컴포넌트와 겹치거나 css속성인 z-index를 신경써야 한다는 문제점이 발생할 수 있다. 이러한 문제를 Portal을 통해 해결할 수 있다."
+     "기존의 리액트에서 컴포넌트를 렌더링 하게 될 때, 
+     children 은 부모컴포넌트의 DOM 내부에 렌더링 되어야 했지만 
+     Portals 를 사용하면 DOM 의 계층구조 시스템에 종속되지 않으면서 컴포넌트를 렌더링 할 수 있다."
+   
+     "modal 사용 시 다른 컴포넌트와 겹치거나 
+     css속성인 z-index를 신경써야 한다는 문제점이 발생할 수 있다. 
+     이러한 문제를 Portal을 통해 해결할 수 있다."
 
     //index.html 파일
     <body>
@@ -87,4 +91,4 @@
         <Upload modalOpen={modalOpen} setModalOpen={setModalOpen} />
     </ModalPortal>
   ```
-  - <img src="./src/assets/images/modal.png">
+  <img src="./src/assets/images/modal.png">
