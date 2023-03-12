@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Icons from "../../constants/icon";
 import GoogleLogin from "./GoogleLogin";
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -29,7 +30,11 @@ const Header = () => {
             <wt-icon-button id="nav-button" class="wt-head">
               <Icons.FaBars size={20} color="#fff" />
             </wt-icon-button>
-            <wt-logo onClick={onLogoClick}>WeTube</wt-logo>
+            <Link to={{pathname : `/`}}>
+            <wt-logo >
+              WeTube
+            </wt-logo>
+            </Link>
           </div>
 
           <div id="center" className="wt-head">
@@ -115,6 +120,20 @@ const Header = () => {
                         <span>로그인</span>
                       </div>
                     </div> */}
+                    <Link to="/studio">
+                      <div
+                        style={{
+                          color: "white",
+                          marginTop: "10px",
+                          marginRight: "15px",
+                          backgroundColor: "red",
+                          borderRadius: "10px",
+                          padding: "5px 5px",
+                        }}
+                      >
+                        Move to Studio👆
+                      </div>
+                    </Link>
                     <GoogleLogin
                       isLogin={isLogin}
                       setIsLogin={setIsLogin}

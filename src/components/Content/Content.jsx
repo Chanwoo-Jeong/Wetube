@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "../../assets/test2.jpg";
 import Image2 from "../../assets/test.jpg";
+import { Link } from "react-router-dom";
 
 import Categorybar from "../Categorybar/Categorybar";
 
@@ -21,11 +22,16 @@ const Content = () => {
                     <wt-grid-media class="wt-item-render">
                       <div id="dismissible" className="wt-grid-media">
                         <wtd-thumbnail class="wt-grid-media">
-                          <a
+                          <Link
+                            id="thumbnail"
+                            className="wt-simple-endpoint wtd-thumbnail"
+                            to="/detail"
+                          >
+                            {/* <a
                             id="thumbnail"
                             className="wt-simple-endpoint wtd-thumbnail"
                             href="/detail"
-                          >
+                          > */}
                             <wt-image class="wtd-thumbnail">
                               <img
                                 className="wtd-thumbnail"
@@ -50,7 +56,8 @@ const Content = () => {
                                 </span>
                               </wtd-thumbnail-overlay-time-status-render>
                             </div>
-                          </a>
+                            {/* </a> */}
+                          </Link>
                         </wtd-thumbnail>
                         <div id="details" className="wt-grid-media">
                           <a

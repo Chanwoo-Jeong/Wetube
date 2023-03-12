@@ -7,6 +7,7 @@ import "./StudioHeader.scss";
 import HeaderSearchResults from "./HeaderSearchResults";
 
 import ModalPortal from "../../Portal";
+import { Link } from "react-router-dom";
 
 const StudioHeader = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -30,9 +31,11 @@ const StudioHeader = () => {
             </wt-iron-icon>
           </wt-icon-button>
           <wt-home-button class="wt-st-header">
-            <a id="home-button" className="wt-home-button" href="/studio">
+            <Link id="home-button" className="wt-home-button" to={{pathname : `/`}} >
+            {/* <a id="home-button" className="wt-home-button" href="/studio"> */}
               WeTube
-            </a>
+            {/* </a> */}
+            </Link>
           </wt-home-button>
           <wt-st-search id="st-search" class="wt-st-header" expanded>
             <div id="search-layer" className="wt-st-search">
