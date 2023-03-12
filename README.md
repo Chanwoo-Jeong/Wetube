@@ -38,6 +38,7 @@
 <img src="./src/assets/images/modal.png">
 
 ### `성장한점`
+- git & github 의 숙련도가 올라갔다. fork, clone, pr, 코드리뷰 능숙해졌다!
 - Youtube 개발자도구를 보며 Elements를 분석하며 복잡한Layout에 익숙해져갔다.
 - 삼항연산자보다 좋은 {{}}[] 문법 ([]속 상태에 따라 컴포넌트를 랜더링 할 수 있다.)
   ```javascript
